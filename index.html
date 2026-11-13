@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiveClicks | Data-Driven Digital Marketing Agency & Growth Partner</title>
+  <meta name="description" content="HiveClicks helps modern businesses scale with high-ROI Paid Ads, Search Engine Optimization, Conversion Rate Optimization, and full-funnel lead generation." />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              accent: '#3b82f6',
+              dark: '#0f172a',
+              card: '#1e293b'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    .gradient-text {
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-border {
+      position: relative;
+    }
+    .gradient-border::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      background: linear-gradient(to right, #f59e0b, #3b82f6);
+      border-radius: inherit;
+      z-index: -1;
+      opacity: 0.3;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black font-sans">
+
+  <!-- TOP ANNOUNCEMENT BANNER -->
+  <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-blue-600 text-slate-950 font-semibold text-xs md:text-sm py-2 px-4 text-center">
+    <span>🚀 Claim Your Complimentary Q2 Growth & SEO Audit ($750 Value) — Limited to 5 Brands This Week!</span>
+    <a href="#audit-form" class="underline ml-2 hover:text-white transition">Claim Audit &rarr;</a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 backdrop-blur-lg bg-slate-950/80 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- LOGO -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-black shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+          <i data-lucide="zap" class="w-6 h-6 stroke-[2.5]"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-tight text-white">Hive<span class="text-amber-400">Clicks</span></span>
+          <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-semibold">Growth Agency</span>
+        </div>
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-amber-400 transition">Services</a>
+        <a href="#case-studies" class="hover:text-amber-400 transition">Case Studies</a>
+        <a href="#calculator" class="hover:text-amber-400 transition">ROI Calculator</a>
+        <a href="#process" class="hover:text-amber-400 transition">Process</a>
+        <a href="#faq" class="hover:text-amber-400 transition">FAQ</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="flex items-center space-x-4">
+        <a href="#audit-form" class="hidden sm:inline-flex items-center space-x-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-5 py-2.5 rounded-full shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition transform hover:-translate-y-0.5 text-sm">
+          <span>Get Free Audit</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-20 pb-28 overflow-hidden">
+    <!-- Background Glow Elements -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <!-- Trust Pill -->
+      <div class="inline-flex items-center space-x-2 bg-slate-900/90 border border-slate-700/80 px-4 py-1.5 rounded-full text-xs font-semibold text-slate-300 mb-8 backdrop-blur-md shadow-inner">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <span>Trusted by 50+ Growing Brands & High-Intent Startups</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-tight sm:leading-none mb-6">
+        Stop Wasting Ad Spend. Turn Every Click Into <span class="gradient-text">Predictable Revenue.</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+        HiveClicks engineer full-funnel digital marketing engines. From high-converting Google & Meta Ads to dominant organic SEO and funnel optimization, we build systems that generate qualified leads on autopilot.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-16">
+        <a href="#audit-form" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-amber-500/25 transition transform hover:-translate-y-0.5 text-base">
+          <span>Book 1-on-1 Growth Audit</span>
+          <i data-lucide="calendar" class="w-5 h-5"></i>
+        </a>
+        <a href="#case-studies" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-8 py-4 rounded-xl transition text-base">
+          <span>View Proven Results</span>
+          <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Stat Badges -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-800/80">
+        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 backdrop-blur">
+          <p class="text-3xl sm:text-4xl font-black text-amber-400 mb-1">4.6x</p>
+          <p class="text-xs sm:text-sm font-medium text-slate-400">Average ROAS</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 backdrop-blur">
+          <p class="text-3xl sm:text-4xl font-black text-white mb-1">$12M+</p>
+          <p class="text-xs sm:text-sm font-medium text-slate-400">Revenue Generated</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 backdrop-blur">
+          <p class="text-3xl sm:text-4xl font-black text-amber-400 mb-1">-42%</p>
+          <p class="text-xs sm:text-sm font-medium text-slate-400">Lower Acquisition Cost</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 backdrop-blur">
+          <p class="text-3xl sm:text-4xl font-black text-white mb-1">98.4%</p>
+          <p class="text-xs sm:text-sm font-medium text-slate-400">Client Retention Rate</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOGO TICKER / BRAND PROOF -->
+  <section class="py-10 border-y border-slate-800/60 bg-slate-950/50">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">Mastering Every Major Acquisition Channel</p>
+      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition duration-300">
+        <div class="flex items-center space-x-2 font-bold text-slate-300 text-lg">
+          <i data-lucide="target" class="w-6 h-6 text-amber-400"></i>
+          <span>Google Ads</span>
+        </div>
+        <div class="flex items-center space-x-2 font-bold text-slate-300 text-lg">
+          <i data-lucide="share-2" class="w-6 h-6 text-blue-400"></i>
+          <span>Meta (FB & IG)</span>
+        </div>
+        <div class="flex items-center space-x-2 font-bold text-slate-300 text-lg">
+          <i data-lucide="search" class="w-6 h-6 text-emerald-400"></i>
+          <span>Technical SEO</span>
+        </div>
+        <div class="flex items-center space-x-2 font-bold text-slate-300 text-lg">
+          <i data-lucide="layout" class="w-6 h-6 text-purple-400"></i>
+          <span>CRO & Funnels</span>
+        </div>
+        <div class="flex items-center space-x-2 font-bold text-slate-300 text-lg">
+          <i data-lucide="mail" class="w-6 h-6 text-rose-400"></i>
+          <span>Email Automation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE SERVICES SECTION -->
+  <section id="services" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-bold uppercase tracking-wider text-xs bg-amber-400/10 px-3 py-1 rounded-full">Our Core Capabilities</span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">Precision Services Built for Scale</h2>
+        <p class="text-slate-400 text-base sm:text-lg">We don't sell vanity metrics or empty follower counts. We focus entirely on customer acquisition, conversion pipelines, and measurable profit.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service Card 1 -->
+        <div class="bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group hover:-translate-y-1 shadow-lg">
+          <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+            <i data-lucide="trending-up" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Paid Search & Google Ads</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Capture high-intent buyers the exact second they search for your solution. Keyword intent sculpting, negative match pruning, and automated bidding strategies that maximize ROAS.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-amber-400 mr-2"></i> Search, Shopping & Performance Max</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-amber-400 mr-2"></i> High-Intent B2B & E-commerce Strategy</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-amber-400 mr-2"></i> Bid Optimization & Daily Click Auditing</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group hover:-translate-y-1 shadow-lg">
+          <div class="w-14 h-14 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-slate-950 transition">
+            <i data-lucide="layers" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Social Ads (Meta & TikTok)</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Stop the scroll with high-performing video and carousel ad creatives. We test dozens of psychological hooks to uncover winning campaigns that scale without fatigue.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-400 mr-2"></i> Creative Hook Testing & UGC Iterations</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-400 mr-2"></i> Lookalike & Retargeting Multi-Tier Funnels</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-blue-400 mr-2"></i> First-Party CAPI Server-Side Tracking</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group hover:-translate-y-1 shadow-lg">
+          <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition">
+            <i data-lucide="bar-chart-2" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Dominant SEO & Authority</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Build sustainable, compounding organic pipelines. From deep technical schema audits to commercial-intent keyword clustering and high-tier link outreach.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-400 mr-2"></i> Technical Core Web Vitals Optimization</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-400 mr-2"></i> Commercial Content Hubs & Topic Clusters</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-400 mr-2"></i> White-Hat Editorial Digital PR</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group hover:-translate-y-1 shadow-lg">
+          <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition">
+            <i data-lucide="mouse-pointer-click" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Conversion Rate Optimization (CRO)</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Traffic without conversions is an expense. We diagnose friction points, design bespoke landing pages, and run rigorous A/B tests that double your conversion percentage.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-purple-400 mr-2"></i> Heatmap & User Session Drop-Off Analysis</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-purple-400 mr-2"></i> Lightning-Fast Dedicated Landing Pages</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-purple-400 mr-2"></i> Systematic A/B Headline & Offer Tests</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group hover:-translate-y-1 shadow-lg">
+          <div class="w-14 h-14 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-rose-500 group-hover:text-slate-950 transition">
+            <i data-lucide="mail-check" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Lifecycle & Retention Marketing</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Turn one-time buyers into lifetime advocates. Automated email and SMS nurture sequences that maximize customer lifetime value (LTV) and reactivation rates.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-rose-400 mr-2"></i> Behavioral Abandoned Cart & Browse Triggers</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-rose-400 mr-2"></i> Automated VIP & Cross-Sell Journeys</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-rose-400 mr-2"></i> Deliverability Audits & List Hygiene</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition duration-300 group hover:-translate-y-1 shadow-lg">
+          <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition">
+            <i data-lucide="pie-chart" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Live Growth Analytics & Dashboards</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Total transparency. You get real-time client dashboards tracking blended CAC, MER (Marketing Efficiency Ratio), pipeline value, and exact revenue attribution.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-cyan-400 mr-2"></i> 24/7 Custom Looker Studio Dashboards</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-cyan-400 mr-2"></i> Clean Multi-Touch Attribution</li>
+            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-cyan-400 mr-2"></i> Weekly Strategic Growth Syncs</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE ROI CALCULATOR (CONVERTS HIGH-VALUE LEADS) -->
+  <section id="calculator" class="py-20 bg-slate-900/40 border-y border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-amber-400 font-bold uppercase tracking-wider text-xs bg-amber-400/10 px-3 py-1 rounded-full">Interactive Tool</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Calculate Your Estimated Growth Potential</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">See what happens when HiveClicks optimizes your acquisition funnel.</p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Sliders -->
+        <div class="lg:col-span-7 space-y-6">
+          <div>
+            <div class="flex justify-between text-sm font-semibold mb-2">
+              <span class="text-slate-300">Monthly Marketing Budget:</span>
+              <span class="text-amber-400 text-base" id="budget-display">$5,000</span>
+            </div>
+            <input id="budget-slider" type="range" min="1000" max="50000" step="500" value="5000" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm font-semibold mb-2">
+              <span class="text-slate-300">Average Customer Order / Deal Value:</span>
+              <span class="text-amber-400 text-base" id="deal-display">$250</span>
+            </div>
+            <input id="deal-slider" type="range" min="50" max="5000" step="50" value="250" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm font-semibold mb-2">
+              <span class="text-slate-300">Target Industry:</span>
+              <span class="text-slate-400 text-xs">(Select below)</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2">
+              <button type="button" class="industry-btn active bg-amber-500 text-slate-950 font-bold text-xs py-2 px-3 rounded-lg border border-amber-500" data-multiplier="3.8">E-Commerce</button>
+              <button type="button" class="industry-btn bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-xs py-2 px-3 rounded-lg border border-slate-700" data-multiplier="4.5">B2B SaaS / Services</button>
+              <button type="button" class="industry-btn bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-xs py-2 px-3 rounded-lg border border-slate-700" data-multiplier="4.2">Local / Healthcare</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projected Outputs -->
+        <div class="lg:col-span-5 bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-700/80 p-6 rounded-2xl text-center space-y-5">
+          <div>
+            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Estimated Monthly Revenue</p>
+            <p class="text-4xl font-extrabold text-amber-400" id="projected-revenue">$19,000</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 border-t border-slate-800 pt-4">
+            <div>
+              <p class="text-[11px] uppercase text-slate-400">Est. New Leads/Sales</p>
+              <p class="text-xl font-bold text-white" id="projected-leads">76</p>
+            </div>
+            <div>
+              <p class="text-[11px] uppercase text-slate-400">Projected Net ROI</p>
+              <p class="text-xl font-bold text-emerald-400" id="projected-roi">+280%</p>
+            </div>
+          </div>
+          <a href="#audit-form" class="inline-block w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3 rounded-xl transition text-sm shadow-md">
+            Unlock This Growth Plan &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES / PROOF SECTION -->
+  <section id="case-studies" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-bold uppercase tracking-wider text-xs bg-amber-400/10 px-3 py-1 rounded-full">Real Results</span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-4">How HiveClicks Scales Real Businesses</h2>
+        <p class="text-slate-400 text-base sm:text-lg">Look inside the actual numbers we generated for our partners across various verticals.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Case Study 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition">
+          <div class="h-3 bg-amber-500"></div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-amber-400 uppercase tracking-wider">E-Commerce Brand</span>
+            <h3 class="text-xl font-bold text-white mt-1 mb-3">Scale from $45k to $210k/mo in 90 Days</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-6">
+              Restructured meta campaign architecture with dynamic creative testing (DCT) and fixed post-purchase cart abandonment flows.
+            </p>
+            <div class="grid grid-cols-2 gap-3 border-t border-slate-800 pt-4 text-center">
+              <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800/80">
+                <span class="block text-xl font-extrabold text-white">5.1x</span>
+                <span class="text-[10px] text-slate-400 uppercase">Blended ROAS</span>
+              </div>
+              <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800/80">
+                <span class="block text-xl font-extrabold text-emerald-400">+365%</span>
+                <span class="text-[10px] text-slate-400 uppercase">Revenue Scale</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition">
+          <div class="h-3 bg-blue-500"></div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">B2B SaaS & Services</span>
+            <h3 class="text-xl font-bold text-white mt-1 mb-3">182 Qualified Sales Demos per Month</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-6">
+              Engineered targeted Google Search & LinkedIn sponsored lead forms combined with an interactive ROI calculator landing page.
+            </p>
+            <div class="grid grid-cols-2 gap-3 border-t border-slate-800 pt-4 text-center">
+              <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800/80">
+                <span class="block text-xl font-extrabold text-white">$64</span>
+                <span class="text-[10px] text-slate-400 uppercase">Cost Per Demo</span>
+              </div>
+              <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800/80">
+                <span class="block text-xl font-extrabold text-emerald-400">-52%</span>
+                <span class="text-[10px] text-slate-400 uppercase">CPA Reduction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition">
+          <div class="h-3 bg-emerald-500"></div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Healthcare / Local High-Ticket</span>
+            <h3 class="text-xl font-bold text-white mt-1 mb-3">Dominating Page 1 & 4.8x Phone Call Volume</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-6">
+              Complete local map pack optimization, localized content cluster creation, and high-converting click-to-call mobile funnels.
+            </p>
+            <div class="grid grid-cols-2 gap-3 border-t border-slate-800 pt-4 text-center">
+              <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800/80">
+                <span class="block text-xl font-extrabold text-white">#1</span>
+                <span class="text-[10px] text-slate-400 uppercase">Google Map Pack</span>
+              </div>
+              <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800/80">
+                <span class="block text-xl font-extrabold text-emerald-400">+480%</span>
+                <span class="text-[10px] text-slate-400 uppercase">Inbound Calls</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OUR 4-STEP GROWTH FRAMEWORK -->
+  <section id="process" class="py-20 bg-slate-950 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-bold uppercase tracking-wider text-xs bg-amber-400/10 px-3 py-1 rounded-full">The HiveClicks Engine</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">A Proven 4-Step Blueprint For Scalability</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800 relative">
+          <span class="text-5xl font-black text-slate-800 absolute top-4 right-4">01</span>
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="scan" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Deep Funnel Audit</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We uncover where you are leaking cash, examine your competitor tactics, and find untapped keyword & audience pockets.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800 relative">
+          <span class="text-5xl font-black text-slate-800 absolute top-4 right-4">02</span>
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="wrench" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Tracking & Foundation</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Bulletproof server-side tracking, GA4, pixel setup, and high-speed landing page architecture built for conversions.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800 relative">
+          <span class="text-5xl font-black text-slate-800 absolute top-4 right-4">03</span>
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="rocket" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Omnichannel Launch</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Deploy hyper-targeted Google, Meta, and SEO campaigns simultaneously with rigorous ad creative split-testing.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800 relative">
+          <span class="text-5xl font-black text-slate-800 absolute top-4 right-4">04</span>
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold mb-4">
+            <i data-lucide="repeat" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Aggressive Scaling</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Cut underperforming ads, double down on profitable winners, and scale budgets with stable customer acquisition costs.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LEAD CAPTURE AUDIT SECTION (MAIN CONVERSION ELEMENT) -->
+  <section id="audit-form" class="py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/30 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        
+        <div class="absolute -top-24 -right-24 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-amber-400 font-bold uppercase tracking-wider text-xs bg-amber-400/10 px-3 py-1 rounded-full">Free Consultation</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-3">Request Your Free Custom Growth Audit</h2>
+          <p class="text-slate-400 text-sm">Tell us about your brand. We will analyze your website, current ad campaigns, and SEO to send you a customized video audit & action plan within 24 hours.</p>
+        </div>
+
+        <form id="lead-form" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Full Name *</label>
+              <input type="text" id="lead-name" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-amber-500 transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Work Email Address *</label>
+              <input type="email" id="lead-email" required placeholder="john@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-amber-500 transition">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Website URL / Brand Name *</label>
+              <input type="text" id="lead-website" required placeholder="https://yourwebsite.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-amber-500 transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone / WhatsApp Number</label>
+              <input type="tel" id="lead-phone" placeholder="+1 (555) 000-0000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-amber-500 transition">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Primary Service You Need</label>
+              <select id="lead-service" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-amber-500 transition">
+                <option value="Paid Ads (Google & Meta)">Paid Ads (Google & Meta)</option>
+                <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
+                <option value="Full Funnel & CRO Optimization">Full Funnel & CRO Optimization</option>
+                <option value="Complete Growth Overhaul (All Services)">Complete Growth Overhaul (All Services)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Monthly Marketing Budget</label>
+              <select id="lead-budget" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-amber-500 transition">
+                <option value="$1,000 - $3,000 / month">$1,000 - $3,000 / month</option>
+                <option value="$3,000 - $10,000 / month" selected>$3,000 - $10,000 / month</option>
+                <option value="$10,000 - $25,000 / month">$10,000 - $25,000 / month</option>
+                <option value="$25,000+ / month">$25,000+ / month</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">What is your #1 growth bottleneck right now?</label>
+            <textarea id="lead-message" rows="3" placeholder="E.g., High cost per click, not enough organic leads, ad fatigue, low landing page conversion..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 transition"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold py-4 px-6 rounded-xl shadow-xl shadow-amber-500/25 transition transform hover:-translate-y-0.5 text-base flex items-center justify-center space-x-2">
+            <span>Send My Free Growth & SEO Audit</span>
+            <i data-lucide="send" class="w-5 h-5"></i>
+          </button>
+
+          <!-- Success Alert Placeholder -->
+          <div id="form-success" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-center text-sm font-semibold">
+            🎉 Thank you! Your request has been received. A HiveClicks growth strategist will contact you within 24 hours.
+          </div>
+
+          <p class="text-center text-[11px] text-slate-500">🔒 100% Confidential. No spam. Zero obligation.</p>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-20 bg-slate-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-amber-400 font-bold uppercase tracking-wider text-xs bg-amber-400/10 px-3 py-1 rounded-full">Got Questions?</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-white text-base">
+            <span>How fast can we see measurable results with HiveClicks?</span>
+            <span class="transition group-open:rotate-180 text-amber-400"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+            For Paid Advertising (Google & Meta Ads), we usually start testing and generating qualified leads within the first 7 to 14 days following tracking integration. For organic SEO, measurable ranking shifts and traffic compounding typically show strong gains within 60 to 90 days.
+          </p>
+        </details>
+
+        <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-white text-base">
+            <span>How does HiveClicks differ from typical marketing agencies?</span>
+            <span class="transition group-open:rotate-180 text-amber-400"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+            Most agencies operate as order-takers or focus on vanity metrics (impressions, clicks, likes). At HiveClicks, we align directly with your bottom line: cost-per-acquisition (CPA), return on ad spend (ROAS), and actual converted pipeline. Plus, you get dedicated senior strategists and live transparent dashboards.
+          </p>
+        </details>
+
+        <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-white text-base">
+            <span>Do you require long-term contracts?</span>
+            <span class="transition group-open:rotate-180 text-amber-400"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+            No forced lock-ins. We earn your business every month. We recommend an initial 90-day sprint because systematic split testing and algorithmic campaign optimization need proper statistical runway, but our high client retention rate is driven by performance, not legal handcuffs.
+          </p>
+        </details>
+
+        <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-white text-base">
+            <span>What happens during the Free Growth Audit?</span>
+            <span class="transition group-open:rotate-180 text-amber-400"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+            We inspect your current web presence, conversion bottlenecks, past ad performance (if available), and competitors. We then deliver a clear, actionable teardown outlining immediate fixes to improve your ROI.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-12 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center space-x-3">
+        <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-black">
+          <i data-lucide="zap" class="w-5 h-5"></i>
+        </div>
+        <span class="text-xl font-bold text-white">Hive<span class="text-amber-400">Clicks</span></span>
+      </div>
+
+      <div class="flex items-center space-x-6 text-xs">
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#case-studies" class="hover:text-white transition">Case Studies</a>
+        <a href="#calculator" class="hover:text-white transition">ROI Calculator</a>
+        <a href="#audit-form" class="hover:text-white transition">Contact</a>
+      </div>
+
+      <p class="text-xs text-slate-500">&copy; <span id="current-year"></span> HiveClicks. All rights reserved. Data-driven growth partner.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK CONNECT BUTTON (WhatsApp / Contact) -->
+  <a href="#audit-form" class="fixed bottom-6 right-6 z-40 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold p-3.5 rounded-full shadow-2xl flex items-center space-x-2 transition transform hover:scale-110 border-2 border-slate-900 group">
+    <i data-lucide="message-square" class="w-6 h-6"></i>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-extrabold pr-1">Book Audit</span>
+  </a>
+
+  <!-- LOGIC & INTERACTIONS -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Current Year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // ROI Calculator Logic
+    const budgetSlider = document.getElementById('budget-slider');
+    const dealSlider = document.getElementById('deal-slider');
+    const budgetDisplay = document.getElementById('budget-display');
+    const dealDisplay = document.getElementById('deal-display');
+    const projectedRevenue = document.getElementById('projected-revenue');
+    const projectedLeads = document.getElementById('projected-leads');
+    const projectedRoi = document.getElementById('projected-roi');
+    const industryBtns = document.querySelectorAll('.industry-btn');
+
+    let currentMultiplier = 3.8;
+
+    function formatCurrency(val) {
+      return '$' + Math.round(val).toLocaleString();
+    }
+
+    function calculateGrowth() {
+      const budget = parseFloat(budgetSlider.value);
+      const deal = parseFloat(dealSlider.value);
+
+      budgetDisplay.textContent = formatCurrency(budget);
+      dealDisplay.textContent = formatCurrency(deal);
+
+      const estimatedRev = budget * currentMultiplier;
+      const estimatedDeals = Math.round(estimatedRev / deal);
+      const netRoiPercent = Math.round(((estimatedRev - budget) / budget) * 100);
+
+      projectedRevenue.textContent = formatCurrency(estimatedRev);
+      projectedLeads.textContent = estimatedDeals.toLocaleString();
+      projectedRoi.textContent = '+' + netRoiPercent + '%';
+    }
+
+    budgetSlider.addEventListener('input', calculateGrowth);
+    dealSlider.addEventListener('input', calculateGrowth);
+
+    industryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        industryBtns.forEach(b => {
+          b.classList.remove('bg-amber-500', 'text-slate-950', 'font-bold');
+          b.classList.add('bg-slate-800', 'text-slate-300', 'font-medium');
+        });
+        btn.classList.add('bg-amber-500', 'text-slate-950', 'font-bold');
+        btn.classList.remove('bg-slate-800', 'text-slate-300', 'font-medium');
+
+        currentMultiplier = parseFloat(btn.getAttribute('data-multiplier'));
+        calculateGrowth();
+      });
+    });
+
+    calculateGrowth();
+
+    // Form Handling
+    const leadForm = document.getElementById('lead-form');
+    const formSuccess = document.getElementById('form-success');
+
+    leadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('lead-name').value;
+      const email = document.getElementById('lead-email').value;
+      const website = document.getElementById('lead-website').value;
+      const service = document.getElementById('lead-service').value;
+      const budget = document.getElementById('lead-budget').value;
+      const message = document.getElementById('lead-message').value;
+
+      // Show success message
+      formSuccess.classList.remove('hidden');
+      leadForm.reset();
+
+      // Optional: You can link this directly to Formspree, your email, or WhatsApp
+      console.log('Lead Captured:', { name, email, website, service, budget, message });
+    });
+  </script>
+</body>
+</html>
